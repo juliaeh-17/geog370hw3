@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geog370hw3</title>
+</head>
+<body>
+    <h1>In this project, I learned how to display world maps in different projections using QGIS.</h1>
+
+    <h2 style="color:indigo">How did I do this?</h2>
+    <p>write paragraph here</p>
+
+    <h2>WGS84 Projection</h2>
+    <h3>This map projection is quite common and is what many of us are used to; in fact, I have a Mercator map on my bedroom wall. It is notorious for distorting the poles, making Greenland appear much larger than it is. It preserves direction, which is why it is good for navigation and is the primary map projection in GPS.</h3>
+    <a href="./maps/3857proj.png">
+    <img src="./maps/3857proj.png" alt="WGS84" width="500 px">
+    </a> 
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>This map preserves area, of course, but greatly distorts shape as it gets closer to the poles, making the poles appear squished. Africa has a more accurate representation in size compared to the WGS84 projection. Other countries near the equator are accurate as well.</h3>
+    <a href="./maps/World_Cylindrical_Equal_Area.png">
+    <img src="./maps/World_Cylindrical_Equal_Area.png" alt="World Cylindrical" width="500 px">
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>This map is quite different from the two-dimensional maps most are used to, as it appears we are looking down at the north pole of the Earth. It is rounded, showing the sphericity of the Earth. It preserves distance, of course, as well as direction. But shape and area are distorted as it moves out from the center.</h3>
+    <a href="./maps/North_Pole_Azimuthal_Equidistant.png">
+    <img src="./maps/North_Pole_Azimuthal_Equidistant.png" alt="NP Azimuthal" width="500 px">
+    </a>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>This one looks similar to the North Pole Azimuthal projection, but the distances appear differently than they do in the latter, which is interesting to note as they are both equidistant. The shape and area become more distorted as it moves away from the center.</h3>
+    <a href="./maps/World_Equidistant_Conic.png">
+    <img src="./maps/World_Equidistant_Conic.png" alt="Equidistant Conic" width="500 px">
+    </a>
+    <h2>Sphere Winkel I Projection</h2>
+    <h3>This map distorts area and shape and is non-conformal. Thus, it might not be of great use to navigators; however, it is still pleasing to the eye, it does not look all that wonky. It does appear to stretch shapes as it gets closer to the poles, making the tail of South America look very long.</h3>
+    <a href="./maps/Sphere_Winkel_I.png">
+    <img src="./maps/Sphere_Winkel_I.png" alt="Sphere Winkel" width="500 px">
+    </a>
+    <h2>World Wagner VII Projection</h2>
+    <h3>This map preserves area, but distorts shape, direction, distance, and angles. The distorted angles are quite evident at the poles and edges of the map. The poles appear squished and sort of inverted.</h3>
+    <a href="./maps/World_Wagner_VII.png">
+    <img src="./maps/World_Wagner_VII.png" alt="World Wagner" width="500 px">
+    </a>
+    <h2>World Behrmann Projection</h2>
+    <h3>This map projection preserves area, but distorts shape, as the poles appear squished. It also distorts distance, angle, and direction. Perhaps it could be used for large-scale maps; it is not totally unpleasing to the eye.</h3>
+    <a href="./maps/behrmann.png">
+    <img src="./maps/behrmann.png" alt="Behrmann" width="500 px">
+    </a>
+</body>
+</html>
