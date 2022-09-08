@@ -9,14 +9,24 @@
 <body>
     <h1>In this project, I learned how to display world maps in different projections.</h1>
 
-    <h2 style="color:indigo">How did I do this?</h2>
+    <h2 style="color:blueviolet">How did I do this?</h2>
     <p>Using QGIS, I added a shapefile vector layer from Professor Arce-Nazario's naturalearth file. Once the layer was added, I was able to change the project properties (CRS) by clicking the button on the bottom right. I could then look for hundreds of maps by their EPSG, starting with the map projections we were to include in this assignment, and then finding new ones. I also installed the Indicatrix Mapper plugin in QGIS so that I could see how shape/area is distorted in each projection.</p>
 
     <h2>WGS84 Projection</h2>
     <h3>This map projection is quite common and is what many of us are used to; in fact, I have a Mercator map on my bedroom wall. It is notorious for distorting the poles, making Greenland appear much larger than it is. It preserves direction, which is why it is good for navigation and is the primary map projection in GPS.</h3>
     <a href="./maps/3857proj.png">
-    <img src="./maps/3857proj.png" alt="WGS84" width="500 px">
+    <img src="./maps/3857proj.png" alt="Pseudo Mercator" width="500 px">
     </a> 
+    <h2>WGS84 Projection</h2>
+    <h3>This map is similar to the psuedo-mercator; however, the poles are stretched out east to west rather than north to south. Closer to the equator, shape is preserved.</h3>
+    <a href="./maps/4326.png">
+    <img src="./maps/4326.png" alt="WGS84" width="500 px">
+    </a>
+    <h2>World Aitoff Projection</h2>
+    <h3>This map is rounded, showing the sphericity of the Earth. However, shapes are distorted, as well as area, direction, and distance. Distortions are most obvious on the edges of the map.</h3>
+    <a href="./maps/worldaitoff.png">
+    <img src="./maps/worldaitoff.png" alt="Aitoff" width="500 px">
+    </a>
     <h2>World Cylindrical Equal Area Projection</h2>
     <h3>This map preserves area, of course, but greatly distorts shape as it gets closer to the poles, making the poles appear squished. Africa has a more accurate representation in size compared to the WGS84 projection. Other countries near the equator are accurate as well.</h3>
     <a href="./maps/World_Cylindrical_Equal_Area.png">
